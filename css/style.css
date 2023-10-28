@@ -189,3 +189,96 @@ header nav ul li a:hover::after {
   border-radius: 10px;
   border: 5px solid var(--lightColor);
 }
+
+/* Styling for work/portfolio projects column 2 */
+.work-col-2 {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-rows: 300px 100px 100px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    "project1 project1"
+    "project2 project3"
+    "project4 project5";
+}
+
+/* Project-specific styles */
+#project-1 {
+  grid-area: project1;
+  background-image: url("../images/horiseon_demo_screenshot.png");
+}
+
+#project-2 {
+  grid-area: project2;
+  background-image: url("https://placehold.co/600x400?text=Coming+Soon");
+}
+
+#project-3 {
+  grid-area: project3;
+  background-image: url("https://placehold.co/600x400?text=Coming+Soon");
+}
+
+#project-4 {
+  grid-area: project4;
+  background-image: url("https://placehold.co/600x400?text=Coming+Soon");
+}
+
+#project-5 {
+  grid-area: project5;
+  background-image: url("https://placehold.co/600x400?text=Coming+Soon");
+}
+
+/* Work grid area styles */
+.workGridArea {
+  display: grid;
+  position: relative;
+  align-content: end;
+  width: 100%;
+  height: auto;
+  margin: 5px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: 4px solid var(--lightColor);
+}
+
+.workGridArea::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: 0.5s;
+  background-color: rgba(255, 107, 107, 0.2);
+}
+
+.workGridArea:hover::before {
+  background-color: rgba(31, 103, 212, 0);
+}
+
+/* Work heading styles */
+.work-heading {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin-bottom: 10px;
+  padding: 5px;
+  color: var(--darkColor);
+  background-color: var(--lightColor);
+}
+
+.work-heading p {
+  font-size: var(--font-size-sm);
+}
+
+/* Work image link styles */
+.work-image-link {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  cursor: pointer;
+}
