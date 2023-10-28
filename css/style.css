@@ -1,23 +1,143 @@
-* {
+/* Custom CSS variables for consistent font size and color management */
+:root {
+  --font-size-sm: clamp(0.8rem, 0.17vh + 0.76rem, 0.89rem);
+  --font-size-base: clamp(1rem, 0.34vh + 0.91rem, 1.19rem);
+  --font-size-md: clamp(1.25rem, 0.61vh + 1.1rem, 1.58rem);
+  --font-size-lg: clamp(1.56rem, 1vh + 1.31rem, 2.11rem);
+  --font-size-xl: clamp(1.95rem, 1.56vh + 1.56rem, 2.81rem);
+  --font-size-xxl: clamp(2.44rem, 2.38vh + 1.85rem, 3.75rem);
+  --font-size-xxxl: clamp(3.85rem, 3.54vh + 2.17rem, 5rem);
+
+  --darkColor: #2b2d42; /* Dark header background color */
+  --lightColor: #ffd369; /* Light accent color */
+  --sectionColor: #4a4e69; /* Website text color */
+  --backgroundColor: #f0f3bd; /* Website background color */
+}
+
+/* Global CSS reset and font settings */
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
   box-sizing: border-box;
 }
 
-body {
-  margin: 0;
-  padding: 0;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  line-height: 1.5;
+h1 {
+  font-size: var(--font-size-xxxl);
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin: 0;
+h2 {
+  font-size: var(--font-size-xxl);
+}
+
+h3 {
+  font-size: var(--font-size-xl);
+}
+
+h4 {
+  font-size: var(--font-size-lg);
+}
+
+h5 {
+  font-size: var(--font-size-md);
 }
 
 p {
-  margin: 0;
+  font-size: var(--font-size-base);
+}
+
+/* Styling for the entire page */
+body {
+  background-color: var(--backgroundColor);
+  color: var(--sectionColor);
+}
+
+/* Header styles */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 10%;
+  background-color: var(--darkColor);
+}
+
+/* Logo within the header */
+header .logo {
+  width: 300px;
+  text-align: right;
+  font-size: var(--font-size-xl);
+  color: var(--darkColor);
+  background-color: var(--lightColor);
+}
+
+/* Navigation menu styles */
+header nav ul {
+  list-style: none;
+}
+
+header nav ul li {
+  display: inline-block;
+  margin: 10px 20px;
+}
+
+header nav ul li a {
+  font-weight: 700;
+  color: var(--lightColor);
+  text-decoration: none;
+  font-size: var(--font-size-md);
+  position: relative;
+}
+
+header nav ul li a::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 3px;
+  left: 0;
+  bottom: -6px;
+  background: var(--lightColor);
+  transition: 0.5s;
+}
+
+header nav ul li a:hover::after {
+  width: 100%;
+}
+
+/* Hero banner styles */
+.hero-banner {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  background-image: url(../images/02-hero-bg.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.hero-banner::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(47, 46, 66, 0.2);
+}
+
+/* Text within the hero banner */
+.hero-text {
+  position: absolute;
+  margin: 20px;
+  padding: 5px;
+  bottom: 20px;
+  right: 20px;
+  color: var(--darkColor);
+  background-color: var(--lightColor);
+}
+
+.hero-text p span {
+  font-weight: bold;
+  text-decoration: underline;
 }
