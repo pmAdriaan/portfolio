@@ -141,3 +141,51 @@ header nav ul li a:hover::after {
   font-weight: bold;
   text-decoration: underline;
 }
+
+/* Page wrapper settings */
+.page-wrapper {
+  margin: 0 auto;
+  width: 1200px; /* Maximum page width */
+}
+
+/* Page section styles */
+.page-section {
+  display: grid;
+  padding: 50px 0;
+  margin: 0 5%;
+  color: var(--sectionColor);
+  grid-template-columns: 30% 70%; /* Columns size */
+}
+
+/* Styling for about, work, and contact columns */
+.about-col-1,
+.work-col-1,
+.contact-col-1 {
+  text-align: right;
+  padding-right: 20px;
+  border-right: 5px solid var(--sectionColor);
+}
+
+.about-col-2,
+.work-col-2,
+.contact-col-2 {
+  margin: 0 5%;
+}
+
+/* Additional styling for about column 2 */
+.about-col-2 {
+  display: flex;
+  justify-content: center;
+}
+
+.about-col-2 p {
+  font-size: var(--font-size-lg);
+  margin-left: 30px;
+}
+
+.about-col-2 img {
+  width: 200px;
+  height: 200px;
+  border-radius: 10px;
+  border: 5px solid var(--lightColor);
+}
