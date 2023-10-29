@@ -154,7 +154,7 @@ header nav ul li a:hover::after {
   padding: 50px 0;
   margin: 0 5%;
   color: var(--sectionColor);
-  grid-template-columns: 30% 70%; /* Columns size */
+  grid-template-columns: 20% 80%; /* Columns size */
 }
 
 /* Styling for about, work, and contact columns */
