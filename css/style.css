@@ -282,3 +282,87 @@ header nav ul li a:hover::after {
   z-index: 1;
   cursor: pointer;
 }
+
+/* Contact column 2 styles */
+.contact-col-2 ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 50px;
+  list-style: none;
+}
+
+.contact-col-2 ul li a {
+  position: relative;
+  font-size: var(--font-size-lg);
+  font-weight: 700;
+  text-decoration: none;
+  color: var(--sectionColor);
+}
+
+.contact-col-2 ul li a::after {
+  content: "";
+  position: absolute;
+  text-decoration: underline;
+  width: 0;
+  height: 5px;
+  left: 0;
+  bottom: -6px;
+  transition: 0.5s;
+  background: var(--sectionColor);
+}
+
+.contact-col-2 ul li a:hover::after {
+  width: 100%;
+}
+
+/* Contact icon styles */
+#email::before,
+#linkedin::before,
+#github::before,
+#codersrank::before {
+  content: "";
+  display: inline-block;
+  width: 1.3em;
+  height: 1.3em;
+  margin-right: 0.5em;
+  background-size: contain;
+}
+
+#email::before {
+  background: url(../images/email.png) center/cover no-repeat;
+}
+
+#linkedin::before {
+  background: url(../images/linkedin.png) center/cover no-repeat;
+}
+
+#github::before {
+  background: url(../images/github.png) center/cover no-repeat;
+}
+
+#codersrank::before {
+  background: url(../images/CodersRank.png) center/cover no-repeat;
+}
+
+/* Footer styles */
+footer {
+  margin-top: 100px;
+  text-align: center;
+  padding: 10px 0;
+  color: #fff;
+  background-color: #333;
+}
+
+footer span {
+  font-size: var(--font-size-sm);
+}
+
+footer span::before {
+  content: "\00a9";
+  margin-right: 5px;
+}
+
+footer span:hover {
+  text-decoration: underline;
+}
