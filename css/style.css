@@ -366,3 +366,112 @@ footer span::before {
 footer span:hover {
   text-decoration: underline;
 }
+
+/* Media query for screens smaller than 1200px */
+@media screen and (max-width: 1200px) {
+  /* Adjust header padding and font size for smaller screens */
+  header {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 5%;
+  }
+
+  header .logo {
+    width: 100%;
+  }
+
+  header nav ul li {
+    display: inline-block;
+    margin: 10px 10px;
+  }
+
+  /* Adjust the hero banner for smaller screens */
+  .hero-banner {
+    height: 250px;
+  }
+
+  .hero-text {
+    bottom: 50px;
+    right: 10px;
+  }
+
+  /* Adjust the page wrapper width for smaller screens */
+  .page-wrapper {
+    width: 100%;
+  }
+
+  /* Adjust page section styles for smaller screens */
+  .page-section {
+    padding: 10px 0;
+    grid-template-columns: 100%;
+  }
+
+  .about-col-1,
+  .work-col-1,
+  .contact-col-1 {
+    text-align: center;
+    padding-right: 0;
+    border-right: none;
+  }
+
+  .about-col-2,
+  .work-col-2,
+  .contact-col-2 {
+    margin: 10px;
+    padding: 0;
+  }
+
+  .about-col-2 {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+  }
+
+  .about-col-2 p {
+    font-size: var(--font-size-md);
+    margin-left: 0;
+  }
+
+  .about-col-2 img {
+    width: 150px;
+    height: 150px;
+  }
+
+  .work-col-2 {
+    grid-template-rows: repeat(5, 200px);
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "project1"
+      "project2"
+      "project3"
+      "project4"
+      "project5";
+  }
+
+  /* Adjust work grid area styles for smaller screens */
+  .workGridArea {
+    margin: 0px;
+  }
+
+  /* Adjust contact column 2 styles for smaller screens */
+  .contact-col-2 ul {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 20px;
+    gap: 15px;
+  }
+
+  .contact-col-2 ul li a {
+    font-size: var(--font-size-md);
+  }
+
+  /* Adjust contact icon styles for smaller screens */
+  #email::before,
+  #linkedin::before,
+  #github::before,
+  #codersrank::before {
+    width: 1em;
+    height: 1em;
+  }
+}
