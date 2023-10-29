@@ -28,7 +28,7 @@
     - [🤖 Running portfolio](#-running-portfolio)
     - [🌐 Live Portfolio Website](#-live-portfolio-website)
     - [📸 Portfolio Screenshot ](#-portfolio-screenshot)
-- [🛣 Roadmap](#-roadmap)
+- [🛣 Project Roadmap](#project-roadmap)
 - [📄 License](#-license)
 
 ---
