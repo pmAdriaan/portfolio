@@ -22,13 +22,13 @@
 - [📍 Overview](#-overview)
 - [📦 Features](#-features)
 - [📂 Repository Structure](#-repository-structure)
-- [⚙️ Modules](#modules)
+- [⚙️ Modules](#%EF%B8%8F-modules)
 - [🚀 Getting Started](#-getting-started)
     - [🔧 Installation](#-installation)
     - [🤖 Running portfolio](#-running-portfolio)
     - [🌐 Live Portfolio Website](#-live-portfolio-website)
     - [📸 Portfolio Screenshot ](#-portfolio-screenshot)
-- [🛣 Roadmap](#-roadmap)
+- [🛣 Project Roadmap](#-project-roadmap)
 - [📄 License](#-license)
 
 ---
