@@ -121,7 +121,7 @@ cd portfolio
 ► [Portfolio](https://pmadriaan.github.io/portfolio/)
 
 
-## 📸 Portfolio Screenshot
+### 📸 Portfolio Screenshot
 
 ![Portfolio Screenshot](./images/portfolio_screenshot.png?raw=true "Portfolio")
 
